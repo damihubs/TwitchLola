@@ -1,16 +1,16 @@
 /* General Body Styles */
 body {
-    font-family: 'Open Sans', sans-serif; /* Use Google Font */
+    font-family: 'Open Sans', sans-serif; /* Google Font */
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* Light background */
+    background-color: #f0f0f0; /* Light background */
     color: #333;
     box-sizing: border-box;
 }
 
-/* Header Styling */
+/* Header Styling with Background Image */
 header {
-    background-image: url('your-background-image.jpg'); /* Hero background image */
+    background-image: url('https://example.com/your-background-image.jpg'); /* Use a vibrant image */
     background-size: cover;
     background-position: center;
     height: 100vh; /* Full screen height */
@@ -20,10 +20,11 @@ header {
     align-items: center;
     color: white;
     text-align: center;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* Text shadow for readability */
 }
 
 header h1 {
-    font-family: 'Montserrat', sans-serif; /* Use Montserrat for headers */
+    font-family: 'Montserrat', sans-serif;
     font-size: 4rem;
     font-weight: bold;
     margin-bottom: 10px;
@@ -32,16 +33,17 @@ header h1 {
 header p {
     font-size: 1.5rem;
     margin-bottom: 20px;
+    opacity: 0.9; /* Increase visibility of the tagline */
 }
 
-/* Navigation Bar */
+/* Navigation Bar Styling */
 nav ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     list-style-type: none;
-    padding: 0;
-    margin: 0;
-    background-color: #333;
+    padding: 15px 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    border-bottom: 2px solid #6441a5; /* Twitch purple border */
 }
 
 nav ul li {
@@ -53,23 +55,27 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
     padding: 15px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: #6441a5; /* Hover effect in Twitch purple */
+    background-color: #6441a5; /* Twitch purple hover effect */
+    color: white;
     border-radius: 5px;
 }
 
-/* Section Styles */
+/* Section Styling */
 section {
     padding: 60px 20px;
     text-align: center;
+    background-color: white; /* Add white background for contrast */
+    color: #333;
 }
 
 section h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 2.5rem;
-    color: #6441a5; /* Twitch purple for section titles */
+    color: #6441a5; /* Use Twitch purple for headings */
     margin-bottom: 20px;
 }
 
@@ -80,18 +86,9 @@ section p {
     margin: 0 auto 40px auto;
 }
 
-/* Event Schedule Section */
-#schedule {
-    background-color: #f4f4f4;
-}
-
-#tickets {
-    background-color: #fff;
-}
-
 /* Button Styling */
 button {
-    background-color: #6441a5;
+    background-color: #6441a5; /* Twitch purple for buttons */
     color: white;
     padding: 15px 30px;
     font-size: 1.2rem;
@@ -112,9 +109,6 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
 }
 
 footer p {
