@@ -10,7 +10,7 @@ body {
 
 /* Header Styling with Background Image */
 header {
-    background-image: url('https://example.com/your-background-image.jpg'); /* Use a vibrant image */
+    background-image: url('images/background.jpg'); /* Reference to your uploaded image */
     background-size: cover;
     background-position: center;
     height: 100vh; /* Full screen height */
@@ -24,7 +24,7 @@ header {
 }
 
 header h1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif; /* Google Font for the header */
     font-size: 4rem;
     font-weight: bold;
     margin-bottom: 10px;
@@ -33,7 +33,7 @@ header h1 {
 header p {
     font-size: 1.5rem;
     margin-bottom: 20px;
-    opacity: 0.9; /* Increase visibility of the tagline */
+    opacity: 0.9; /* Slightly increase text visibility */
 }
 
 /* Navigation Bar Styling */
@@ -43,7 +43,7 @@ nav ul {
     list-style-type: none;
     padding: 15px 0;
     background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
-    border-bottom: 2px solid #6441a5; /* Twitch purple border */
+    border-bottom: 2px solid #6441a5; /* Purple border */
 }
 
 nav ul li {
@@ -68,14 +68,14 @@ nav ul li a:hover {
 section {
     padding: 60px 20px;
     text-align: center;
-    background-color: white; /* Add white background for contrast */
+    background-color: white; /* White background for contrast */
     color: #333;
 }
 
 section h2 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif; /* Google Font for section titles */
     font-size: 2.5rem;
-    color: #6441a5; /* Use Twitch purple for headings */
+    color: #6441a5; /* Twitch purple for headings */
     margin-bottom: 20px;
 }
 
@@ -100,7 +100,7 @@ button {
 }
 
 button:hover {
-    background-color: #532c8c; /* Darker Twitch purple on hover */
+    background-color: #532c8c; /* Darker purple on hover */
 }
 
 /* Footer Styling */
@@ -109,6 +109,9 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 footer p {
